@@ -40,12 +40,6 @@ For manual installation, copy your selections from [skills/](skills/) into `.age
 
 </details>
 
-## Previews
-
-![Two Blender results. A stylized game workshop on the left and the Sugi no Eki bus terminal on the right.](docs/images/blender-agent-skills-showcase.webp)
-
-The [workshop](docs/images/skill-preview.png) was built with Codex using the game asset instructions. The [bus terminal](docs/case-studies/sugi-no-eki/README.md) is an actual Antigravity run with the architecture skill. Its case study includes [the Blender scene and animation](https://github.com/vietlinhh02/blender-agent-skills/releases/tag/bus-case-study) and the [token trace](docs/case-studies/sugi-no-eki/token-trace.txt).
-
 ## Pick a workflow
 
 | Skill | Use it for |
