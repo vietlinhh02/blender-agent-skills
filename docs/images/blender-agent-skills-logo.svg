@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Blender Agent Skills ? layered isometric cube</title>
+  <defs>
+    <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#244C50"/>
+      <stop offset="1" stop-color="#10292C"/>
+    </linearGradient>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M12 0H0v12" fill="none" stroke="#D4E7DF" stroke-opacity=".11"/>
+    </pattern>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="27" fill="url(#tile)"/>
+  <rect x="4" y="4" width="120" height="120" rx="27" fill="url(#grid)"/>
+  <rect x="5" y="5" width="118" height="118" rx="26" fill="none" stroke="#85B2A3" stroke-opacity=".45"/>
+  <path d="M29 61 64 80 99 61v23l-35 20-35-20Z" fill="#3E7772"/>
+  <path d="M64 80 99 61v23l-35 20Z" fill="#80AF9D"/>
+  <path d="M29 61 64 80 99 61M64 80v24" fill="none" stroke="#122C2E" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M28 47 64 27l36 20-36 20Z" fill="#F4C77A"/>
+  <path d="M28 47v7l36 20v-7Z" fill="#BE7C39"/>
+  <path d="M64 67v7l36-20v-7Z" fill="#E6A65A"/>
+  <path d="m44 47 20-11 20 11-20 11Z" fill="none" stroke="#4A392C" stroke-opacity=".57" stroke-width="2"/>
+  <circle cx="64" cy="47" r="3" fill="#274B4A"/>
+</svg>
