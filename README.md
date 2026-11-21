@@ -4,9 +4,19 @@ An Agent Skill for building props, vehicles, characters, creatures, modular kits
 
 Credit: **vietlinhh02**. The optional preview script adds this credit to a separate PNG. You can set a different label with `--text`. The script only reads the preview image and writes the requested PNG.
 
+## Included skills
+
+- [blender-game-assets](skills/blender-game-assets/) builds and exports props, characters, vehicles, and environments for games.
+- [architectural-environment-production](skills/architectural-environment-production/) contains the complete original architecture workflow. It includes the six studio stages, OpenBIM/CAD and shader references, the progression matrix script, and bilingual prompt templates.
+- [architectural-prompt-builder](skills/architectural-prompt-builder/) turns a brief into a prompt for the studio workflow.
+
+The full architecture workflow was written for Antigravity and uses Blender MCP and agent tools. On other clients, use the equivalent Blender, image, and agent tools if available. The game workflow can run with Blender and shell access.
+
+The original local Antigravity skills used underscores in their names. The public folder names use hyphens to follow the Agent Skills specification. Their internal references and prompt examples use those public names.
+
 ## Install in a project
 
-Copy the entire [skills/blender-game-assets](skills/blender-game-assets) folder into the location below. Start a new session in that project so the client can discover the skill.
+For game assets, copy the complete [blender-game-assets](skills/blender-game-assets/) folder into the location below. To install the full suite, copy **all three folders inside [skills](skills/)** as siblings under your client's skills directory. Start a new session in that project so the client can discover the skills.
 
 | Client | Project location | Example |
 | --- | --- | --- |
