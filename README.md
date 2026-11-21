@@ -4,7 +4,13 @@ Agent Skills for building game assets, playable scenes, and architectural enviro
 
 ![Blender render of a stylized workshop diorama with a utility truck, a service robot, and modular props](docs/images/skill-preview.png)
 
-*Sample from the game asset workflow, rendered in Blender.*
+*Stylized game showcase made with Codex following the game asset skill and rendered in Blender.*
+
+## Real Antigravity run
+
+[![The original Sugi no Eki bus terminal render](docs/case-studies/sugi-no-eki/images/bus-hero.webp)](docs/case-studies/sugi-no-eki/)
+
+[Sugi no Eki bus case study](docs/case-studies/sugi-no-eki/) documents a real `/teamwork` run with the original architecture skill. It includes the six camera views, progression, Blender source, animation, and token trace across 20 transcripts.
 
 Credit: **vietlinhh02**. The optional preview script adds this credit to a separate PNG. You can set a different label with `--text`. The script only reads the preview image and writes the requested PNG.
 

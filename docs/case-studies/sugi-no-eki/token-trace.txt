@@ -1,0 +1,59 @@
+Run: Sugi no Eki | transcripts found: 20
+Input+output is a log subtotal; cache reads are separate.
+
+By conversation
+Scope                                                               Calls        Input       Output  Input+output    Cache read
+TOTAL                                                                 658   26,458,786    1,166,508    27,625,294    71,623,582
+         Root                                                         137   11,359,112      229,884    11,588,996    16,462,573
+         Project Orchestrator                                         105    5,131,753      106,278     5,238,031    13,324,875
+         Teamwork Multi-Agent Team                                     95    3,972,869       51,286     4,024,155     7,710,360
+         Stage 05 Showcase, Section Cutaway & Deliverables Worker      27      947,239       43,996       991,235     2,076,647
+         Specialist 3: Threshold Details, Props & Cedar Foliage        13      651,925       80,680       732,605     1,136,612
+         Specialist 1: Primary Architecture & Coach Structure          33      547,319       98,044       645,363     5,319,522
+         Stage 03 Sequential Blender Execution Worker                  41      593,981       49,520       643,501     4,902,075
+         Specialist 2: Site Terrain & Hardscape                        15      484,387       71,819       556,206     1,161,971
+         Stage 04 Refinement & Polish Worker (Pass 2)                  25      475,590       62,647       538,237     4,428,458
+         Stage 04 Adversarial Visual Critic (Pass 1)                   11      394,836       33,490       428,326     1,642,385
+         Specialist 4: LookDev, Studio Polish, Lighting & Cameras      18      299,346       64,968       364,314     1,777,448
+         Stage 02 Reference & PBR Texture Worker                       24      291,568       47,734       339,302     2,227,124
+         Stage 04 Adversarial Visual Critic (Pass 2)                   11      270,522       23,835       294,357       840,795
+         Victory Auditor                                               15      226,319       17,234       243,553     1,944,747
+         Final Forensic Integrity Auditor                              18      203,615       22,542       226,157     2,046,640
+         Stage 00-01 Blueprint & Massing Worker                        21      139,145       52,762       191,907     1,720,201
+         Task Interviewer                                               9      141,478       22,960       164,438       164,037
+         Final Independent Acceptance Reviewer                         15      138,923       24,185       163,108     1,340,624
+         Preflight Blender & Environment Explorer                      11       87,751       39,188       126,939       563,061
+         Stage 04 Pass 2 Execution Replacement Worker                  14      101,108       23,456       124,564       833,427
+
+By model
+Scope                                                               Calls        Input       Output  Input+output    Cache read
+gemini-4-hydrogen-tiered-high                                         521   15,099,674      936,624    16,036,298    55,161,009
+gemini-flash-worker-agy                                               106    8,338,693      166,710     8,505,403    11,389,059
+gemini-pro-orchestrator-neon                                           17    1,815,237       55,304     1,870,541       638,272
+claude-sonnet-5-5-medium                                               13      803,968        7,318       811,286     4,435,242
+gemini-4-argon-medium                                                   1      401,214          552       401,766             0
+
+By user turn (root only)
+Scope                                                               Calls        Input       Output  Input+output    Cache read
+#0 User turn                                                            5      125,784       10,145       135,929             0
+#11 User turn                                                           6      111,711        4,280       115,991        99,637
+#24 User turn                                                          22    1,078,307       14,287     1,092,594        39,668
+#109 User turn                                                         30    1,366,513       41,042     1,407,555     2,313,940
+#195 User turn                                                         27    2,747,702       76,401     2,824,103     3,455,227
+#261 User turn                                                         33    4,723,913       75,859     4,799,772     6,118,859
+#342 User turn                                                          1      384,554        1,178       385,732         7,814
+#344 User turn                                                         12      419,414        6,140       425,554     4,427,428
+#375 User turn                                                          1      401,214          552       401,766             0
+
+Largest model calls
+Scope                                                               Calls        Input       Output  Input+output    Cache read
+         #376 manage_task, manage_task, run_command                     1      401,214          552       401,766             0
+         #360 run_command                                               1      396,804          221       397,025         7,814
+         #338 read_file, read_file                                      1      388,112          277       388,389             0
+         #343 text                                                      1      384,554        1,178       385,732         7,814
+         #330 write_file                                                1      344,059        1,715       345,774             0
+         #328 call_mcp_tool                                             1      343,222          522       343,744             0
+         #326 call_mcp_tool                                             1      342,801          268       343,069             0
+         #324 call_mcp_tool                                             1      342,300          350       342,650             0
+         #322 call_mcp_tool                                             1      341,862          287       342,149             0
+         #316 run_command                                               1      339,726          335       340,061             0
