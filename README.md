@@ -198,3 +198,7 @@ Build a complete multi-zone 3D architectural reconstruction of bus model  in Ble
 ---
 
 Created by **[vietlinhh02](https://github.com/vietlinhh02)** ? [Preview watermark](skills/blender-game-assets/scripts/watermark_preview.py) ? [AGY trace helper](skills/blender-game-assets/references/agy-trace.md)
+
+## License
+
+The skills and project documentation are licensed under the [Apache License 2.0](LICENSE). Copyright 2026 vietlinhh02.

@@ -6,6 +6,7 @@ description: >-
   environment idea. Activate whenever the user asks to create, craft, or expand
   a prompt to feed into a new Antigravity conversation for building 3D
   architectural worlds in Blender.
+license: Apache-2.0
 ---
 
 # Architectural Prompt Builder

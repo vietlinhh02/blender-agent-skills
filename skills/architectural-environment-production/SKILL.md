@@ -1,6 +1,7 @@
 ---
 name: architectural-environment-production
 description: Build Blender architecture and environments. Use the game-asset workflow for game levels and stylized scenes, and the studio workflow for detailed architectural reconstructions, photoreal presentations, or explicit OpenBIM/CAD requirements. Also routes other Blender game assets when invoked by name.
+license: Apache-2.0
 ---
 
 # Architectural Environment Production

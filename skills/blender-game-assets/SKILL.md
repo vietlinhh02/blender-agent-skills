@@ -5,6 +5,7 @@ compatibility: Requires access to local Blender through a shell or a Blender int
 metadata:
   credit: vietlinhh02
   version: "0.1.0"
+license: Apache-2.0
 ---
 
 # Blender Game Assets
