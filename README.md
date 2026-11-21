@@ -1,6 +1,10 @@
-# Blender Game Assets
+# Blender Agent Skills
 
-An Agent Skill for building props, vehicles, characters, creatures, modular kits, and playable scenes in Blender. Its default workflow uses one agent, one small preview, and one focused correction pass. It saves the editable Blender file and can export an engine-ready asset.
+Agent Skills for building game assets, playable scenes, and architectural environments in Blender. The game workflow uses one agent, one small preview, and one focused correction pass by default. The full architecture workflow adds CAD/BIM, materials, lighting, and presentation renders.
+
+![Blender render of a stylized workshop diorama with a utility truck, a service robot, and modular props](docs/images/skill-preview.png)
+
+*Sample from the game asset workflow, rendered in Blender.*
 
 Credit: **vietlinhh02**. The optional preview script adds this credit to a separate PNG. You can set a different label with `--text`. The script only reads the preview image and writes the requested PNG.
 
