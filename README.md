@@ -44,13 +44,23 @@ For manual installation, copy your selections from [skills/](skills/) into `.age
 
 ### Stylized game workshop
 
-![Direct Blender preview of a stylized workshop, utility truck, and robot](docs/images/skill-preview.png)
+<img src="docs/images/skill-preview.png" alt="Stylized workshop, utility truck, and robot in Blender" width="520">
 
 Built with Codex following the game asset skill.
 
 ### Sugi no Eki bus terminal
 
-![Direct Blender preview of the green and cream bus at the Sugi no Eki terminal](docs/case-studies/sugi-no-eki/images/bus-hero.webp)
+| Exterior | Station interior |
+| :--- | :--- |
+| [![Green and cream bus in front of the terminal](docs/case-studies/sugi-no-eki/images/bus-hero.webp)](docs/case-studies/sugi-no-eki/images/bus-hero.webp) | [![Timber station interior with warm window light](docs/case-studies/sugi-no-eki/images/bus-interior.webp)](docs/case-studies/sugi-no-eki/images/bus-interior.webp) |
+
+| Aerial view | Eye-level view |
+| :--- | :--- |
+| [![Aerial view of the terminal, cedar trees, and road](docs/case-studies/sugi-no-eki/images/bus-aerial.webp)](docs/case-studies/sugi-no-eki/images/bus-aerial.webp) | [![Eye-level view of the bus at the station entrance](docs/case-studies/sugi-no-eki/images/bus-front.webp)](docs/case-studies/sugi-no-eki/images/bus-front.webp) |
+
+| Bus detail | Section A-A |
+| :--- | :--- |
+| [![Close-up on the bus grille, headlights, and bumper](docs/case-studies/sugi-no-eki/images/bus-detail.webp)](docs/case-studies/sugi-no-eki/images/bus-detail.webp) | [![Sectional cutaway through the bus terminal](docs/case-studies/sugi-no-eki/images/bus-cutaway.webp)](docs/case-studies/sugi-no-eki/images/bus-cutaway.webp) |
 
 **12-second bus animation**
 

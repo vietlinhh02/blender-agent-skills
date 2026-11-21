@@ -4,7 +4,19 @@ This case study documents a real Antigravity CLI run from November 20, 2026. The
 
 The bus case predates [blender-game-assets](../../../skills/blender-game-assets/SKILL.md) and serves as a measured baseline. The workshop image on the repository homepage is a separate Blender example made with Codex using the game skill's instructions.
 
-![Original Blender render of a green and cream coach outside the Sugi no Eki bus terminal](images/bus-hero.webp)
+## Camera views
+
+| Exterior | Station interior |
+| :--- | :--- |
+| [![Green and cream bus in front of the terminal](images/bus-hero.webp)](images/bus-hero.webp) | [![Timber station interior with warm window light](images/bus-interior.webp)](images/bus-interior.webp) |
+
+| Aerial view | Eye-level view |
+| :--- | :--- |
+| [![Aerial view of the terminal, cedar trees, and road](images/bus-aerial.webp)](images/bus-aerial.webp) | [![Eye-level view of the bus at the station entrance](images/bus-front.webp)](images/bus-front.webp) |
+
+| Bus detail | Section A-A |
+| :--- | :--- |
+| [![Close-up on the bus grille, headlights, and bumper](images/bus-detail.webp)](images/bus-detail.webp) | [![Sectional cutaway through the bus terminal](images/bus-cutaway.webp)](images/bus-cutaway.webp) |
 
 [Read the original bus prompt](../../prompts/sugi-no-eki-original.md) to reproduce the brief or adapt all six stages to another subject.
 
