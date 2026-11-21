@@ -1,55 +1,62 @@
 # Blender Agent Skills
 
-Agent Skills for building game assets, playable scenes, and architectural environments in Blender. The game workflow uses one agent, one small preview, and one focused correction pass by default. The full architecture workflow adds CAD/BIM, materials, lighting, and presentation renders.
+Build game-ready assets, modular levels, and architectural scenes in Blender from an agent session.
 
-![Blender render of a stylized workshop diorama with a utility truck, a service robot, and modular props](docs/images/skill-preview.png)
-
-*Stylized game showcase made with Codex following the game asset skill and rendered in Blender.*
-
-## Real Antigravity run
-
-[![The original Sugi no Eki bus terminal render](docs/case-studies/sugi-no-eki/images/bus-hero.webp)](docs/case-studies/sugi-no-eki/)
-
-[Sugi no Eki bus case study](docs/case-studies/sugi-no-eki/) documents a real `/teamwork` run with the original architecture skill. It includes the six camera views, progression, Blender source, animation, and token trace across 20 transcripts.
-
-Credit: **vietlinhh02**. The optional preview script adds this credit to a separate PNG. You can set a different label with `--text`. The script only reads the preview image and writes the requested PNG.
-
-## Included skills
-
-- [blender-game-assets](skills/blender-game-assets/) builds and exports props, characters, vehicles, and environments for games.
-- [architectural-environment-production](skills/architectural-environment-production/) contains the complete original architecture workflow. It includes the six studio stages, OpenBIM/CAD and shader references, the progression matrix script, and bilingual prompt templates.
-- [architectural-prompt-builder](skills/architectural-prompt-builder/) turns a brief into a prompt for the studio workflow.
-
-The full architecture workflow was written for Antigravity and uses Blender MCP and agent tools. On other clients, use the equivalent Blender, image, and agent tools if available. The game workflow can run with Blender and shell access.
-
-The original local Antigravity skills used underscores in their names. The public folder names use hyphens to follow the Agent Skills specification. Their internal references and prompt examples use those public names.
+[Install](#install-in-a-project) · [See the results](#previews) · [Copy a prompt](docs/prompts/README.md) · [Read the bus trace](docs/case-studies/sugi-no-eki/README.md#token-breakdown)
 
 ## Install in a project
 
-For game assets, copy the complete [blender-game-assets](skills/blender-game-assets/) folder into the location below. To install the full suite, copy **all three folders inside [skills](skills/)** as siblings under your client's skills directory. Start a new session in that project so the client can discover the skills.
-
-| Client | Project location | Example |
-| --- | --- | --- |
-| Codex | `.agents/skills/blender-game-assets/` | `$blender-game-assets` |
-| Antigravity (AGY) | `.agents/skills/blender-game-assets/` | `/blender-game-assets` |
-| Gemini CLI | `.agents/skills/blender-game-assets/` | Ask it to use `blender-game-assets` |
-| Claude Code | `.claude/skills/blender-game-assets/` | `/blender-game-assets` |
-
-The core follows the [Agent Skills specification](https://agentskills.io/specification). Building requires local Blender through a shell or compatible integration. The agent's host controls tool access. Compatibility here refers to the skill format and discovery paths.
-
-## Copy-ready prompts
-
-- [Original bus reconstruction prompt](docs/prompts/sugi-no-eki-original.md) by **vietlinhh02**, with all six stages.
-- [Prompt gallery](docs/prompts/README.md) for a prop, a vehicle, a rigged character, a creature, a modular level kit, and two architecture workflows.
-
-## Try it
-
-> Use blender-game-assets to build a stylized mining cart for a low-poly game. Give the wheels separate pivots, save a .blend and export .glb. Deliver a small preview with credit.
-
-To add the credit manually, install Pillow 10.1 or newer in your Python environment, then run:
+From your project folder, run this and choose the skills and agent you want. The installer pulls the skills directly from this GitHub repo.
 
 ```sh
-python skills/blender-game-assets/scripts/watermark_preview.py preview.png preview-credited.png
+npx skills add vietlinhh02/blender-agent-skills
 ```
 
-Add `--text "Your studio" --font "/path/to/font.ttf"` to customize the label and font. For Antigravity CLI users, [token tracing](skills/blender-game-assets/references/agy-trace.md) is available as a separate tool.
+Install all three skills for **Antigravity CLI (AGY)** in one step:
+
+```sh
+npx skills add vietlinhh02/blender-agent-skills --skill "*" --agent antigravity-cli -y
+```
+
+Use **Node.js 22.20 or later** for the installer. Open a new agent session in your project after installing. To build a scene, give your agent access to Blender through the shell or a compatible Blender integration.
+
+<details>
+<summary>Install a single skill, target another agent, or install manually</summary>
+
+```sh
+npx skills add vietlinhh02/blender-agent-skills --list
+npx skills add vietlinhh02/blender-agent-skills --skill blender-game-assets --agent codex
+```
+
+Use `claude-code`, `gemini-cli`, or `antigravity-cli` in place of `codex` to choose another client. Add `-g` to install for your user across projects. Install all three if you want the architecture workflow and prompt builder to find their sibling skills.
+
+For manual installation, copy your selections from [skills/](skills/) into `.agents/skills/` for AGY, Codex, or Gemini CLI, or `.claude/skills/` for Claude Code. Keep each skill's folder and resources together.
+
+[Installer documentation](https://github.com/vercel-labs/skills)
+
+</details>
+
+## Previews
+
+| Stylized game workshop | Sugi no Eki bus terminal |
+| :--- | :--- |
+| [![Blender workshop diorama with a utility truck and a robot](docs/images/skill-preview.png)](docs/images/skill-preview.png) | [![Bus parked outside the Sugi no Eki terminal](docs/case-studies/sugi-no-eki/images/bus-hero.webp)](docs/case-studies/sugi-no-eki/README.md) |
+| Made with Codex following the game asset skill, then rendered in Blender. | Real AGY `/teamwork` run with the original architecture skill. [See six camera views, Blender source, animation, and token trace →](docs/case-studies/sugi-no-eki/README.md) |
+
+## Pick a workflow
+
+| Skill | Use it for |
+| :--- | :--- |
+| [**Blender Game Assets**](skills/blender-game-assets/SKILL.md) | Props, vehicles, rigged characters, creatures, and modular levels. Defaults to one agent, one small preview, and editable `.blend` plus engine export. |
+| [**Architectural Environment Production**](skills/architectural-environment-production/SKILL.md) | Metric site plans, CAD/BIM or an orthographic fallback, six camera views, a cutaway, and a before/after sheet. |
+| [**Architectural Prompt Builder**](skills/architectural-prompt-builder/SKILL.md) | Turn a building brief into a copy-ready prompt for the full architecture workflow. |
+
+The architecture studio workflow was written for AGY and uses Blender MCP, image generation, and subagents. On another client, use equivalent tools when available.
+
+## Start with a prompt
+
+> Use `blender-game-assets` to build a stylized mining cart. Give each wheel its own pivot, save a `.blend`, export a `.glb`, and add one gameplay-angle preview.
+
+[Browse 7 copy-ready prompts →](docs/prompts/README.md) · [Read the original six-stage bus prompt →](docs/prompts/sugi-no-eki-original.md)
+
+**Credit:** `vietlinhh02` · [Preview watermark script](skills/blender-game-assets/scripts/watermark_preview.py) · [AGY trace helper](skills/blender-game-assets/references/agy-trace.md)
