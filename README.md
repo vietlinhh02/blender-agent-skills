@@ -78,6 +78,8 @@ https://github.com/user-attachments/assets/71eddd3d-d921-4d5f-a772-aa949c4d3848
 
 The architecture studio workflow was written for AGY and uses Blender MCP, image generation, and subagents. On another client, use equivalent tools when available.
 
+A short request such as `Build a little repair rover for my exploration game` starts with a brief. The agent fills in scale, camera view, moving parts, and export checks, states assumptions, and builds. Ask for `brief only` or `prompt only` when you want to review or reuse the plan first. The architecture prompt builder is for reusable studio prompts.
+
 ## Copy-ready prompts
 
 Copy a block into a session with its matching skill. Each example includes a concrete asset and deliverable so you can change the brief and reuse the rest.

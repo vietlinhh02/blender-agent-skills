@@ -1,16 +1,25 @@
 ---
 name: blender-game-assets
-description: Build, edit, or export game assets in Blender, including props, vehicles, characters, creatures, modular kits, and playable scenes. Use for low-poly, stylized, or realistic game art, quick blockouts, and assets that need pivots, rigs, animation, or engine export.
+description: Build, edit, or export game assets in Blender, including props, vehicles, characters, creatures, modular kits, and playable scenes. Use for low-poly, stylized, or realistic game art, quick blockouts, and assets that need pivots, rigs, animation, or engine export. Turn short or vague asset requests into a practical build brief or copy-ready Blender prompt.
 compatibility: Requires access to local Blender through a shell or a Blender integration to build assets. The optional preview watermark script uses Python 3 and Pillow.
 metadata:
   credit: vietlinhh02
-  version: "0.1.0"
+  version: "0.2.0"
 license: Apache-2.0
 ---
 
 # Blender Game Assets
 
-Choose one asset, reusable kit, or scene from the brief. Use the project's scale, camera distance, and art direction. Default to a stylized game asset when style is open. Reuse supplied references.
+## Define the asset brief
+
+When the user asks to build or edit an asset, turn their idea into a concrete brief before modeling. If the user provided a complete brief, use it directly. For a vague request with a recognizable subject, make reasonable, reversible choices and share them as assumptions, then continue building in the same session.
+
+- Define the subject, use in the game, silhouette, approximate scale, viewing angle, style, and what makes the output complete. Prefer the project's existing conventions and references. If style is open, start stylized. If the brief is for a standalone asset, create a single asset or cohesive kit.
+- Define part hierarchy, origins, pivots, material approach, and required export checks. Include only relevant features, such as a rig for deformation, clips for requested motion, collision for a playable scene, or grid and snap points for a modular kit. Pick sensible implementation defaults when they are easy to change.
+- State only the assumptions that change the design, movement, or deliverable. Ask one focused question if the subject is missing or a choice would materially change the work and project context cannot resolve it. A missing engine alone is covered by the GLB default.
+- When the user asks for a brief, a copy-ready prompt, or a review before building, deliver that first and use the requested stopping point. For a copy-ready prompt, include the brief and acceptance checks in one block that invokes blender-game-assets. For an ordinary build, the short brief is enough to start. Keep this in the same agent.
+
+## Choose build depth and checks
 
 - **Blockout:** Build the silhouette, gameplay scale, and layout with simple meshes and a short color palette. Save the editable `.blend`.
 - **Game asset (default):** Build and verify the requested asset, save the editable `.blend`, and export the engine format. Use `.glb` when the project has no format preference.
@@ -19,7 +28,7 @@ Choose one asset, reusable kit, or scene from the brief. Use the project's scale
 | Asset | Build around |
 | --- | --- |
 | Prop or foliage | Gameplay silhouette, purposeful pivot, simple material slots, and linked geometry for repeated parts. |
-| Vehicle or machine | Separate required moving parts and put their pivots on axles, hinges, or sliders. Add articulation or clips when requested. |
+| Vehicle or machine | Define the footprint, chassis, and moving parts. Put pivots on axles, hinges, or sliders. Specify clip names and verify motion when requested. |
 | Character or creature | Readable silhouette and pose, topology around deforming joints, and armature, skin weights, or named clips as needed. Validate from relevant viewing angles and check playback when rigged. |
 | Modular kit or level | Consistent grid, snap points, reusable modules, clear gameplay routes, and instances for repeated geometry. |
 
