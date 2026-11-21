@@ -6,6 +6,8 @@ The bus case predates [blender-game-assets](../../../skills/blender-game-assets/
 
 ![Original Blender render of a green and cream coach outside the Sugi no Eki bus terminal](images/bus-hero.webp)
 
+[Read the original bus prompt](../../prompts/sugi-no-eki-original.md) to reproduce the brief or adapt all six stages to another subject.
+
 ## What the run produced
 
 | Stage | Work |
@@ -56,7 +58,7 @@ These worker totals exclude time and tokens spent coordinating each stage in the
 
 The final `endtask` call logged 401,214 input tokens and zero cache reads even though the request itself was short. This makes context size a practical measurement to track when moving from modeling to animation and render.
 
-[Download the full aggregated trace](token-trace.txt) for every role, model, main user turn, and the ten largest calls. It contains counters and tool names. The original prompts, raw transcripts and local paths stay private.
+[Download the full aggregated trace](token-trace.txt) for every role, model, main user turn, and the ten largest calls. It contains counters and tool names. The public case study includes the original build prompt and the aggregate counters.
 
 ## How to compare with the lighter workflow
 

@@ -37,6 +37,11 @@ For game assets, copy the complete [blender-game-assets](skills/blender-game-ass
 
 The core follows the [Agent Skills specification](https://agentskills.io/specification). Building requires local Blender through a shell or compatible integration. The agent's host controls tool access. Compatibility here refers to the skill format and discovery paths.
 
+## Copy-ready prompts
+
+- [Original bus reconstruction prompt](docs/prompts/sugi-no-eki-original.md) by **vietlinhh02**, with all six stages.
+- [Prompt gallery](docs/prompts/README.md) for a prop, a vehicle, a rigged character, a creature, a modular level kit, and two architecture workflows.
+
 ## Try it
 
 > Use blender-game-assets to build a stylized mining cart for a low-poly game. Give the wheels separate pivots, save a .blend and export .glb. Deliver a small preview with credit.
