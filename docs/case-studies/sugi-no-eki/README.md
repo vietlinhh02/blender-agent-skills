@@ -23,9 +23,14 @@ The bus case predates [blender-game-assets](../../../skills/blender-game-assets/
 - [Blockout-to-final progression](images/bus-progression.webp)
 - [12-second animation keyframes](images/bus-animation.webp)
 - [Download static Blender scene](https://github.com/vietlinhh02/blender-agent-skills/releases/download/bus-case-study/sugi-no-eki-bus-terminal.blend)
-- [Download the 12-second MP4](https://github.com/vietlinhh02/blender-agent-skills/releases/download/bus-case-study/sugi-no-eki-bus-stunt-12s.mp4)
 
 The downloadable `.blend` contains the static terminal and bus scene. It was reopened in Blender 5.2 with 1,190 objects, 54 packed images, and relative resource paths. The MP4 is the completed 12-second preview from the follow-up. A separate 1080p render attempt stopped after 41 PNG frames and reported a CUDA illegal-address error.
+
+## Bus animation
+
+https://github.com/user-attachments/assets/71eddd3d-d921-4d5f-a772-aa949c4d3848
+
+[Download the 12-second MP4](https://github.com/vietlinhh02/blender-agent-skills/releases/download/bus-case-study/sugi-no-eki-bus-stunt-12s.mp4)
 
 ## Token breakdown
 

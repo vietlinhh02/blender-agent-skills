@@ -6,7 +6,7 @@
 
 Build game assets and architectural scenes in Blender with your AI agent.
 
-[**Install**](#install-in-a-project) ? [**Copy a prompt**](#copy-ready-prompts) ? [**Original bus prompt**](#original-bus-prompt) ? [**Bus case study**](docs/case-studies/sugi-no-eki/README.md)
+[**Install**](#install-in-a-project) · [**Previews**](#previews) · [**Copy a prompt**](#copy-ready-prompts) · [**Original bus prompt**](#original-bus-prompt) · [**Bus case study**](docs/case-studies/sugi-no-eki/README.md)
 
 ## Install in a project
 
@@ -39,6 +39,24 @@ For manual installation, copy your selections from [skills/](skills/) into `.age
 [Installer documentation](https://github.com/vercel-labs/skills)
 
 </details>
+
+## Previews
+
+### Stylized game workshop
+
+![Direct Blender preview of a stylized workshop, utility truck, and robot](docs/images/skill-preview.png)
+
+Built with Codex following the game asset skill.
+
+### Sugi no Eki bus terminal
+
+![Direct Blender preview of the green and cream bus at the Sugi no Eki terminal](docs/case-studies/sugi-no-eki/images/bus-hero.webp)
+
+**12-second bus animation**
+
+https://github.com/user-attachments/assets/71eddd3d-d921-4d5f-a772-aa949c4d3848
+
+[Download the original MP4](https://github.com/vietlinhh02/blender-agent-skills/releases/download/bus-case-study/sugi-no-eki-bus-stunt-12s.mp4) · [See the case study and token trace](docs/case-studies/sugi-no-eki/README.md)
 
 ## Pick a workflow
 
