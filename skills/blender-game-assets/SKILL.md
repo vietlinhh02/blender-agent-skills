@@ -4,7 +4,7 @@ description: Build, edit, or export game assets in Blender, including props, veh
 compatibility: Requires access to local Blender through a shell or a Blender integration to build assets. The optional preview watermark script uses Python 3 and Pillow.
 metadata:
   credit: vietlinhh02
-  version: "0.2.0"
+  version: "0.3.0"
 license: Apache-2.0
 ---
 
@@ -12,7 +12,9 @@ license: Apache-2.0
 
 ## Define the asset brief
 
-When the user asks to build or edit an asset, turn their idea into a concrete brief before modeling. If the user provided a complete brief, use it directly. For a vague request with a recognizable subject, make reasonable, reversible choices and share them as assumptions, then continue building in the same session.
+When the user asks to build or edit an asset, define the concrete brief before modeling. Preserve a complete request and fill visual or acceptance gaps that will change the delivery. For a vague request with a recognizable subject, make reasonable, reversible choices and share the important assumptions, then continue in the same session.
+
+When the sibling [Blender Technical Prompt Builder](../architectural-prompt-builder/SKILL.md) is installed, use its brief rules in the same agent for vague requests, open art direction, movable features, or technical checks. Read only the relevant guidance. If the builder has already produced a brief in this session, reuse it. If the builder is unavailable, use the rules below. For an ordinary build, a separate copy-ready prompt is extra work; produce it only if requested.
 
 - Define the subject, use in the game, silhouette, approximate scale, viewing angle, style, and what makes the output complete. Prefer the project's existing conventions and references. If style is open, start stylized. If the brief is for a standalone asset, create a single asset or cohesive kit.
 - Define part hierarchy, origins, pivots, material approach, and required export checks. Include only relevant features, such as a rig for deformation, clips for requested motion, collision for a playable scene, or grid and snap points for a modular kit. Pick sensible implementation defaults when they are easy to change.
@@ -38,7 +40,7 @@ Use a connected Blender tool if it provides the required operations. With shell 
 
 1. Inspect the relevant Blender selection or scene. Use a dedicated collection or new file and preserve unrelated scene content. Default to one agent. Batch related work into a local Blender Python script or a few Blender MCP calls and print targeted metrics.
 2. Build geometry, then add the requested materials, articulation, collision, or clips. Check one small preview from the gameplay angle and verify silhouette, scale, pivots, and any requested motion. Default to one focused correction pass and use further checks to resolve concrete defects.
-3. Export the intended objects. Check orientation, materials, and requested clips by importing into the target engine if available, or by clean Blender re-import. Report the files and the import check you ran.
+3. Export the intended objects. Check orientation, materials, named part hierarchy and requested clips in the target engine when available, or by clean Blender re-import. For moving parts, test clearance in Blender before export. After import, sample the requested start, midpoint, and end poses on the exported asset. Report which checks passed and where they were verified.
 
 Skip BIM/CAD, generated contact sheets, mandatory PBR stacks, independent critics, and multi-camera Cycles renders for ordinary game work. Read targeted script sections, keep command output concise, and keep full logs and render sequences on disk. For a long follow-up, checkpoint the `.blend` with a brief handoff so that a fresh session can resume the next phase.
 

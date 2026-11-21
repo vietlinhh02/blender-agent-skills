@@ -74,11 +74,11 @@ https://github.com/user-attachments/assets/71eddd3d-d921-4d5f-a772-aa949c4d3848
 | :--- | :--- |
 | [**Blender Game Assets**](skills/blender-game-assets/SKILL.md) | Props, vehicles, rigged characters, creatures, and modular levels. Defaults to one agent, one small preview, and editable `.blend` plus engine export. |
 | [**Architectural Environment Production**](skills/architectural-environment-production/SKILL.md) | Metric site plans, CAD/BIM or an orthographic fallback, six camera views, a cutaway, and a before/after sheet. |
-| [**Architectural Prompt Builder**](skills/architectural-prompt-builder/SKILL.md) | Turn a building brief into a copy-ready prompt for the full architecture workflow. |
+| [**Blender Technical Prompt Builder**](skills/architectural-prompt-builder/SKILL.md) | Expand Blender ideas into technical prompts for game assets, creatures, vehicles, levels, and architectural scenes. The existing install name is architectural-prompt-builder. |
 
 The architecture studio workflow was written for AGY and uses Blender MCP, image generation, and subagents. On another client, use equivalent tools when available.
 
-A short request such as `Build a little repair rover for my exploration game` starts with a brief. The agent fills in scale, camera view, moving parts, and export checks, states assumptions, and builds. Ask for `brief only` or `prompt only` when you want to review or reuse the plan first. The architecture prompt builder is for reusable studio prompts.
+A short request such as `Build a little repair rover for my exploration game` starts with a brief. The agent fills in scale, camera view, moving parts, and export checks, states assumptions, and builds. Ask for `brief only` or `prompt only` when you want to review or reuse the plan first. The technical prompt builder also gives existing prompts clearer art direction and checks. See the [expanded rover example](skills/architectural-prompt-builder/references/rover-example.md).
 
 ## Copy-ready prompts
 
